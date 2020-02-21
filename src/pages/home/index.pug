@@ -2,4 +2,77 @@ extends /layout/app
 
 block content
   .container
-    | CONTENT
+    section.section.news-section
+      .section__inner
+        h2.section__title.new-section__title News /
+        span.section__subtitle
+        .section__content
+          article.content-item.news-post
+            .news-post__info
+              .date 23 September 2013
+              span Glamour, Fashion
+            h3.news-article__title Duis dapibus aliquam mi, eget euismod sem scelerisque ut.
+            .news-article__img
+              img(src="images/image.jpg", alt="")
+            .news-article__text
+              | Nunc nec massa et risus iaculis interdum et sed mi. Nam viverra
+              | ac neque eu aliquet. Maecenas posuere, neque non vestibulum
+              |  sodales, arcu diam interdum nulla, in molestie magna magna vitae
+              |  justo. Aenean semper volutpat sapien eu porta. Etiam vestibulum
+              |  pharetra risus vel ultricies.
+              span.read-more Read more...
+
+
+          .content-item
+            .tags
+              span.tags__title Tags
+              .tags__btn-inner  
+                .btn Glamour
+                .btn Street
+                .btn Personal
+                .btn Portrait
+                .btn B&W
+                .btn Nude
+                .btn Wedding
+                .btn Fashion
+                .btn Kids
+
+            //- .blog-posts
+            //-   h3 from the
+            //-     span BLOG
+            //-   .blog-posts__item
+            //-     .blog-posts__image
+            //-       img(src="images/image.jpg", alt="")
+            //-     .content
+            //-       p
+            //-         |Lorem ipsum dolor sit amet, consectetur adipiscing elit.Morbi blandit velit id dolor fermentum, non
+            //-         |posuere libero posuere.
+            //-   .blog-posts__item
+            //-     img(src="images/image.jpg", alt="")
+            //-     .content
+            //-       p
+            //-         |Lorem ipsum dolor sit amet, consectetur adipiscing elit.Morbi blandit velit id dolor fermentum, non
+            //-         |posuere libero posuere.
+    section.section.clients-section
+      .section__inner
+        .section__content.clients-section__content
+          .clients-section__item
+            img(src="images/clients/canon-logo.png", alt="canon")
+          .clients-section__item
+             img(src="images/clients/nikon-logo.png", alt="nikon")
+          .clients-section__item
+            img(src="images/clients/manfrotto-logo.png", alt="manfrotto")
+          .clients-section__item
+            img(src="images/clients/prolight-logo.png", alt="prolight")
+
+
+
+
+
+
+
+
+
+
+
+
