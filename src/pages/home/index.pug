@@ -2,6 +2,14 @@ extends /layout/app
 
 block content
   .container
+    section.section.quote-section
+      .section__inner
+        .section__content.quote-section__content
+          p.quote-section__quote
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            | Aenean vel diam non neque iaculis sollicitudin.
+          span.quote-section__author - lorem ipsum -
+
     section.section.news-section
       .section__inner
         h2.section__title.new-section__title News /
@@ -26,7 +34,7 @@ block content
           .content-item
             .tags
               span.tags__title Tags
-              .tags__btn-inner  
+              .tags__btn-inner
                 .btn Glamour
                 .btn Street
                 .btn Personal
@@ -64,6 +72,37 @@ block content
             img(src="images/clients/manfrotto-logo.png", alt="manfrotto")
           .clients-section__item
             img(src="images/clients/prolight-logo.png", alt="prolight")
+    section.section.bio-section
+      .section__inner
+        h2.section__title.bio-section__title Bio /
+        .section__content.bio-section__content
+          .person.content-item
+            div.person__name John Smits
+            div.person__avatar
+              img(src="images/avatar.png", alt="")
+
+          .bio-section__info.content-item
+            span.person__title Best Solution is the simplest IDEA!
+            p.person__text
+              |Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel
+              |diam non neque iaculis sollicitudin. Nunc nec massa et risus
+              |iaculis interdum et sed mi. Nam viverra ac neque eu aliquet.
+              |Maecenas posuere, neque non vestibulum sodales, arcu diam
+              |interdum nulla, in molestie magna magna vitae justo. Aenean
+              |semper volutpat sapien eu porta. Etiam vestibulum pharetra
+              |risus vel ultricies. Phasellus tempus, enim sed gravida interdum,
+              |lorem ipsum auctor libero, ut ultrices dolor dolor at nulla.
+              |Integer viverra vitae velit eget tincidunt. Fusce tristique eros ac
+              |est mattis consequat.
+            p.person__text
+              |Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel
+              |diam non neque iaculis sollicitudin. Nunc nec massa et risus
+              |iaculis interdum et sed mi. Nam viverra ac neque eu aliquet.
+              |Maecenas posuere, neque non vestibulum sodales, arcu diam
+              |interdum nulla, in molestie magna magna vitae justo.
+
+
+
 
 
 

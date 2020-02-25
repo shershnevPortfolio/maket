@@ -1,6 +1,6 @@
 *
   max-width: 100%
-  word-break: break-all
+  word-break: break-word
   // line-height: 10px
 
 .content-item
@@ -100,7 +100,7 @@
 .date
   padding: 6px 21px
   background-color: #59a386
-  color: #fffefe;
+  color: #fffefe
   font-family: "Open Sans"
   font-size: 11px
   font-weight: 400
@@ -116,4 +116,78 @@
 
 .clients-section__content
   align-items: center
+
+
+.bio-section
+  background-color: #e2534b
+  padding-top: 51px
+  padding-bottom: 79px
+
+.bio-section__title
+  margin-bottom: 60px
+
+
+.person
+  display: flex
+  flex-direction: column
+  align-items: center
+  // justify-content: center
+
+.person__text
+  &:not(:last-child)
+    margin-bottom: 16px
+
+.person__avatar
+  padding: 45px 37px
+  background-color: #ffffff
+  border-radius: 100%
+
+.person__name
+  color: #ffffff
+  font-family: "Bebas Neue"
+  font-size: 36px
+  font-weight: 400
+  line-height: 18px
+  margin-bottom: 37px
+
+
+.bio-section__info
+  color: #ffffff
+  font-family: "Open Sans"
+  font-size: 14px
+  font-weight: 400
+  line-height: 18px
+
+.person__title
+  font-family: "Bebas Neue"
+  font-size: 18px
+  line-height: 48px
+
+.quote-section
+  padding-top: 103px
+  padding-bottom: 40px
+
+.quote-section__content
+  // color: #ffffff
+  display: flex
+  flex-direction: column
+
+.quote-section__quote
+  font-family: "Bebas Neue"
+  font-size: 36px
+  font-weight: 400
+  text-align: center
+
+  &::after
+    content: '“'
+
+  &::before
+    content: '“'
+
+
+.quote-section__author
+  text-align: right
+
+
+
 
