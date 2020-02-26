@@ -7,6 +7,11 @@
   width: 100%
   max-width: 45%
 
+
+  @media screen and ( max-width: 868px )
+    max-width: 90%
+
+
 .news-article__title
   color: #59a386
   font-family: "Open Sans - Semibold"
@@ -27,8 +32,7 @@
   font-weight: 400
 
 
-.section__title
-  text-align: center
+
 
 .section
   display: flex
@@ -47,9 +51,11 @@
 
 .section__title
   color: #252222
+  text-align: center
   font-family: "Bebas Neue"
   font-size: 48px
   font-weight: 400
+  text-transform: uppercase
 
 .new-section__title
   margin-bottom: 65px
@@ -57,6 +63,11 @@
 .section__content
   display: flex
   justify-content: space-between
+
+  @media screen and ( max-width: 868px )
+    flex-direction: column
+    align-items: center
+
 
 .section__inner
   // max-width: 950px
@@ -133,6 +144,9 @@
   align-items: center
   // justify-content: center
 
+.person__social
+   margin-top: 48px
+
 .person__text
   &:not(:last-child)
     margin-bottom: 16px
@@ -171,13 +185,13 @@
   // color: #ffffff
   display: flex
   flex-direction: column
-
-.quote-section__quote
   font-family: "Bebas Neue"
   font-size: 36px
   font-weight: 400
   text-align: center
+  color: #ffffff
 
+.quote-section__quote
   &::after
     content: '“'
 
@@ -187,7 +201,64 @@
 
 .quote-section__author
   text-align: right
+  margin-top: 20px
+
+.portfolio-section
+  background-color: #65ba99
+  padding-top: 57px
+  padding-bottom: 102px
+
+.portfolio-section__title
+  color: #ffffff
+  margin-bottom: 50px
+
+  &::after
+    content: 'Glamour  fashion  personal  street  portrait'
+    font-family: "Bebas Neue"
+    font-size: 24px
+    font-weight: 400
+    display: block
+
+.gallery
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+
+  @media screen and ( max-width: 868px )
+      flex-direction: column
+      align-items: center
+
+.gallery__item
+  width: 50%
+  display: flex
+
+  @media screen and ( max-width: 868px )
+    width: 100%
+
+.gallery__item-hover
+  top: 0
+  position: absolute
+  width: 100%
+  height: 100%
+  z-index: 1
+  background-color: rgba(101,186,153,.6)
+  display: none
 
 
 
+.gallery__image
+  height: 100%
+  flex: auto
+  position: relative
 
+  img
+    height: 100%
+    width: 100%
+    z-index: 0
+
+  &:hover
+    .gallery__item-hover
+      display: block
+
+
+//

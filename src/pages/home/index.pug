@@ -2,6 +2,55 @@ extends /layout/app
 
 block content
   .container
+    section.section.portfolio-section
+        .section__inner
+          h2.section__title.portfolio-section__title portfolio /
+          .section__content
+            .gallery
+              .gallery__item
+                .gallery__image
+                  img(src="images/image.jpg", alt="")
+                  //- .gallery__item-hover
+                  //-   div
+                  //-     img(src="images/icons/like.svg", alt="")
+                  //-     img(src="images/icons/like.svg", alt="")
+                  //-     img(src="images/icons/like.svg", alt="")
+                  //-     img(src="images/icons/like.svg", alt="")
+              .gallery__item
+                .gallery__image
+                  img(src="images/image.jpg", alt="")
+              .gallery__item
+                .gallery__image
+                  img(src="images/image.jpg", alt="")
+              .gallery__item
+                .gallery__image
+                  img(src="images/image.jpg", alt="")
+              .gallery__item
+                .gallery__image
+                  img(src="images/faces/face-1.jpg", alt="")
+                .gallery__image
+                  img(src="images/faces/face-2.jpg", alt="")
+              .gallery__item
+                .gallery__image
+                  img(src="images/faces/face-3.jpg", alt="")
+                .gallery__image
+                  img(src="images/faces/face-4.jpg", alt="")
+              .gallery__item
+                .gallery__image
+                  img(src="images/image.jpg", alt="")
+              .gallery__item
+                .gallery__image
+                  img(src="images/building.jpg", alt="")
+                .gallery__image
+                  img(src="images/nature.jpg", alt="")
+              .gallery__item
+                .gallery__image
+                  img(src="images/sea.jpg", alt="")
+                .gallery__image
+                  img(src="images/wheel.jpg", alt="")
+              .gallery__item
+                .gallery__image
+                  img(src="images/shaman-staff.jpg", alt="")
     section.section.quote-section
       .section__inner
         .section__content.quote-section__content
@@ -77,9 +126,18 @@ block content
         h2.section__title.bio-section__title Bio /
         .section__content.bio-section__content
           .person.content-item
-            div.person__name John Smits
-            div.person__avatar
+            .person__name John Smits
+            .person__avatar
               img(src="images/avatar.png", alt="")
+            .social.person__social
+              a(href="#").social__link
+                img(src="images/icons/in_icon.svg", alt="")
+              a(href="#").social__link
+                img(src="images/icons/fb_icon.svg", alt="")
+              a(href="#").social__link
+                img(src="images/icons/flickr_icon.svg", alt="")
+                a(href="#").social__link
+                  img(src="images/icons/tw_icon.svg", alt="")
 
           .bio-section__info.content-item
             span.person__title Best Solution is the simplest IDEA!

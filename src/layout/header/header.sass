@@ -6,20 +6,16 @@
   display: flex
   justify-content: space-between
   align-items: center
-  max-width: 1000px
   margin: 0 auto
 
 .nav__inner
   display: flex
+  align-items: center
 
 .nav__item
 
   &:not(:last-child)
     margin-right: 30px
-
-
-
-
 
 .nav__link
   color: #ffffff
@@ -35,5 +31,30 @@
     .nav__item
       border-bottom: 1px solid #65ba99
 
+.header__social
+   margin-left: 75px
 
+.block
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 144px 15px 127px 15px
+    background-image:url('./photo_head.jpg')
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+
+.block__inner
+  display: flex
+  flex-direction: column
+  line-height: 66px
+  color: #ffffff
+  font-family: "Bebas Neue"
+  font-size: 90px
+  font-weight: 400
+  text-transform: uppercase
+
+.block__text-item--small
+  font-size: 36px
+  line-height: 27px
 
