@@ -7,11 +7,26 @@
   background-position: center
   background-size: cover
 
+  @media screen and ( max-width: 868px )
+    padding: 30px 0px
+
+
 
 .footer-section__content
   color: #ffffff
   flex-direction: column
   align-items: center
+  text-align: center
+
+  *
+    &:not(:last-child)
+      margin-bottom: 25px
+
+
+
+.footer-section__title
+  margin-bottom: 70px
+
 
 .number
   font-family: "Bebas Neue"
@@ -19,20 +34,24 @@
   font-weight: 400
   // line-height: 18px
 
+  @media screen and ( max-width: 868px )
+    font-size: 42px
+
 
 .copyright
   font-size: 14px
   font-weight: 700
+  margin-top: 120px
   // line-height: 22px
 
 .addres
+  display: block
   font-family: "Bebas Neue"
   font-size: 30px
   font-weight: 400
   line-height: 18px
 
 .contact-button
-  padding: 26px 132px
   border: 5px solid #ffffff
   height: auto
   text-align: center
@@ -40,6 +59,6 @@
   font-family: "Bebas Neue"
   font-size: 60px
   font-weight: 400
-  line-height: 18px
+  // line-height: 18px
   letter-spacing: 4.5px
-  line-height: 18px
+  // line-height: 18px

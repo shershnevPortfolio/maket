@@ -11,6 +11,11 @@
   @media screen and ( max-width: 868px )
     max-width: 90%
 
+  &:not(:last-child)
+    @media screen and ( max-width: 868px  )
+      margin-bottom: 20px
+
+
 
 .news-article__title
   color: #59a386
@@ -71,6 +76,8 @@
 
 .section__inner
   // max-width: 950px
+.tags
+  margin-bottom: 60px
 
 .tags__btn-inner
   display: flex
@@ -123,6 +130,12 @@
     background-color: #bebebe
     padding-top: 77px
     padding-bottom: 77px
+
+.clients-section__item
+    &:not(:last-child)
+      @media screen and ( max-width: 868px  )
+        margin-bottom: 50px
+
 
 
 .clients-section__content
@@ -261,4 +274,50 @@
       display: block
 
 
-//
+.blog-posts__item
+  display: flex
+
+  &:not(:last-child)
+    margin-bottom: 19px
+
+
+.blog-posts__date
+  opacity: 0.5
+  color: #e2534b
+  font-family: "Open Sans - Semibold"
+  font-size: 13px
+  font-weight: 400
+  line-height: 19.5px
+
+.blog__posts-image
+  flex-grow: 1
+  margin-right: 18px
+  min-width: 70px
+  max-width: 70px
+  border-radius: 4px
+
+.blog-posts__text
+  color: #252222
+  font-family: "Open Sans"
+  font-size: 13px
+  font-weight: 400
+  line-height: 19.5px
+
+.blog-posts__title
+  margin-bottom: 23px
+  color: #818181
+  font-family: "Open Sans Light"
+  font-size: 20px
+  font-style: italic
+  line-height: 24px
+
+.read-more
+  display: block
+  text-align: right
+  color: #e2534b
+  font-family: "Open Sans"
+  font-size: 14px
+  font-weight: 400
+  line-height: 20.8px
+  cursor: pointer
+  margin-top: 20px

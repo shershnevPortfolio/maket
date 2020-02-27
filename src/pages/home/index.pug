@@ -80,6 +80,7 @@ block content
               span.read-more Read more...
 
 
+
           .content-item
             .tags
               span.tags__title Tags
@@ -94,22 +95,26 @@ block content
                 .btn Fashion
                 .btn Kids
 
-            //- .blog-posts
-            //-   h3 from the
-            //-     span BLOG
-            //-   .blog-posts__item
-            //-     .blog-posts__image
-            //-       img(src="images/image.jpg", alt="")
-            //-     .content
-            //-       p
-            //-         |Lorem ipsum dolor sit amet, consectetur adipiscing elit.Morbi blandit velit id dolor fermentum, non
-            //-         |posuere libero posuere.
-            //-   .blog-posts__item
-            //-     img(src="images/image.jpg", alt="")
-            //-     .content
-            //-       p
-            //-         |Lorem ipsum dolor sit amet, consectetur adipiscing elit.Morbi blandit velit id dolor fermentum, non
-            //-         |posuere libero posuere.
+            .blog-posts
+              .blog-posts__title from the BLOG
+              .blog-posts__item
+                .blog__posts-image
+                  img(src="images/blog-image.jpg", alt="")
+                .blog-posts__text
+                  p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit.Morbi blandit velit id dolor fermentum, non
+                  | posuere libero posuere.
+
+                  p.blog-posts__date 26 Aug, 2013
+              .blog-posts__item
+                .blog__posts-image
+                  img(src="images/blog-image.jpg", alt="")
+                .blog-posts__text
+                  p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit.Morbi blandit velit id dolor fermentum, non
+                  | posuere libero posuere.
+
+                  p.blog-posts__date 26 Aug, 2013
     section.section.clients-section
       .section__inner
         .section__content.clients-section__content
