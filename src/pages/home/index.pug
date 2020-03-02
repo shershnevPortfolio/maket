@@ -10,12 +10,14 @@ block content
               .gallery__item
                 .gallery__image
                   img(src="images/image.jpg", alt="")
-                  //- .gallery__item-hover
-                  //-   div
-                  //-     img(src="images/icons/like.svg", alt="")
-                  //-     img(src="images/icons/like.svg", alt="")
-                  //-     img(src="images/icons/like.svg", alt="")
-                  //-     img(src="images/icons/like.svg", alt="")
+                .gallery__item-hover
+                  div
+                    img(src="images/icons/zoom.svg", alt="")
+                  div
+                    img(src="images/icons/polaroid-icon.svg", alt="")
+                    img(src="images/icons/link.svg", alt="")
+                    img(src="images/icons/info.svg", alt="")
+                    img(src="images/icons/like.svg", alt="")
               .gallery__item
                 .gallery__image
                   img(src="images/image.jpg", alt="")
@@ -52,7 +54,7 @@ block content
                 .gallery__image
                   img(src="images/shaman-staff.jpg", alt="")
     section.section.quote-section
-      .section__inner
+      .inner
         .section__content.quote-section__content
           p.quote-section__quote
             | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -60,14 +62,17 @@ block content
           span.quote-section__author - lorem ipsum -
 
     section.section.news-section
-      .section__inner
+      .inner
         h2.section__title.new-section__title News /
         span.section__subtitle
         .section__content
           article.content-item.news-post
             .news-post__info
               .date 23 September 2013
-              span Glamour, Fashion
+              span.news-post__categories
+                .news-post__categories-img
+                  img(src="images/icons/tag_icon.png", alt="")
+                | Glamour, Fashion
             h3.news-article__title Duis dapibus aliquam mi, eget euismod sem scelerisque ut.
             .news-article__img
               img(src="images/image.jpg", alt="")
@@ -77,10 +82,10 @@ block content
               |  sodales, arcu diam interdum nulla, in molestie magna magna vitae
               |  justo. Aenean semper volutpat sapien eu porta. Etiam vestibulum
               |  pharetra risus vel ultricies.
-              span.read-more Read more...
-
-
-
+              span.read-more
+               |Read more...
+               span.read-more__arrow
+                img(src="images/icons/arrow-icon.png", alt="").
           .content-item
             .tags
               span.tags__title Tags
@@ -96,7 +101,9 @@ block content
                 .btn Kids
 
             .blog-posts
-              .blog-posts__title from the BLOG
+              .blog-posts__title from the
+                  span.blog-posts__title--weight BLOG
+
               .blog-posts__item
                 .blog__posts-image
                   img(src="images/blog-image.jpg", alt="")
@@ -116,7 +123,7 @@ block content
 
                   p.blog-posts__date 26 Aug, 2013
     section.section.clients-section
-      .section__inner
+      .inner
         .section__content.clients-section__content
           .clients-section__item
             img(src="images/clients/canon-logo.png", alt="canon")
@@ -127,7 +134,7 @@ block content
           .clients-section__item
             img(src="images/clients/prolight-logo.png", alt="prolight")
     section.section.bio-section
-      .section__inner
+      .inner
         h2.section__title.bio-section__title Bio /
         .section__content.bio-section__content
           .person.content-item
@@ -163,10 +170,6 @@ block content
               |iaculis interdum et sed mi. Nam viverra ac neque eu aliquet.
               |Maecenas posuere, neque non vestibulum sodales, arcu diam
               |interdum nulla, in molestie magna magna vitae justo.
-
-
-
-
 
 
 

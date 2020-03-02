@@ -113,7 +113,20 @@
 .news-post__info
     margin-bottom: 24px
     display: flex
+    align-items: center
     justify-content: space-between
+
+.news-post__categories-img
+  margin-right: 8px
+  display: flex
+  align-items: center
+
+.news-post__categories
+  display: flex
+  align-items: center
+  color: #e74c3c
+  font-size: 12px
+  font-weight: 400
 
 .date
   padding: 6px 21px
@@ -122,7 +135,7 @@
   font-family: "Open Sans"
   font-size: 11px
   font-weight: 400
-  line-height: 20.8px
+
 
 
 .clients-section
@@ -186,6 +199,7 @@
   line-height: 18px
 
 .person__title
+  text-transform: uppercase
   font-family: "Bebas Neue"
   font-size: 18px
   line-height: 48px
@@ -244,18 +258,26 @@
 .gallery__item
   width: 50%
   display: flex
+  position: relative
+
+  &:hover
+    .gallery__item-hover
+      display: flex
 
   @media screen and ( max-width: 868px )
     width: 100%
 
 .gallery__item-hover
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+  align-items: center
   top: 0
   position: absolute
   width: 100%
   height: 100%
   z-index: 1
   background-color: rgba(101,186,153,.6)
-  display: none
 
 
 
@@ -282,8 +304,7 @@
 
 
 .blog-posts__date
-  opacity: 0.5
-  color: #e2534b
+  color: rgba(226,83,75, .5)
   font-family: "Open Sans - Semibold"
   font-size: 13px
   font-weight: 400
@@ -311,6 +332,13 @@
   font-style: italic
   line-height: 24px
 
+.blog-posts__title--weight
+  color: #252222
+  font-family: "Open Sans"
+  font-weight: 400
+  margin: 0 4px
+
+
 .read-more
   display: block
   text-align: right
@@ -321,3 +349,6 @@
   line-height: 20.8px
   cursor: pointer
   margin-top: 20px
+
+.read-more__arrow
+  margin-left: 15px
